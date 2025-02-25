@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +36,104 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  width: 1140px;
+  height: 534px;
+  margin: auto;
+  display: flex;
+  column-gap: 30px;
+  align-items: end;
+}
+.result {
+  width: 711px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
+}
+
+.result__video-container {
+  padding: 0;
+  margin: 0;
+}
+
+.result__video {
+  width: 100%;
+}
+.search-form {
+}
+.search-form__fieldset {
+}
+.search-form__fieldset-title {
+}
+.search-form__label {
+}
+.search-form__label-text {
+}
+.visually-hidden {
+}
+.search-form__textfield {
+}
+.search-form__checkbox-list {
+}
+.search-form__checkbox {
+}
+.search-form__pseudo-checkbox {
+}
+.button {
+}
+.search-form__submit-button {
+}
+.content__details {
+  width: 399px;
+  height: 534px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70px;
+}
+.content__accent {
+}
+.content__list {
+  overflow-y: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.cards-list-item-template {
+}
+.content__list-item {
+}
+.content__card-link {
+}
+.content__video-card {
+}
+.content__video-card-description-container {
+}
+.content__video-card-title {
+}
+.content__video-card-description {
+}
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 100%;
+}
+.more-button-template {
+}
+.more-button {
+}
+.error-template {
+}
+.error {
+}
+.error__title {
 }
