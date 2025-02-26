@@ -46,6 +46,8 @@ ol {
   column-gap: 30px;
   align-items: end;
 }
+
+
 .result {
   width: 711px;
   display: flex;
@@ -56,15 +58,23 @@ ol {
 .result__video-container {
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
+  height: 386px;
 }
 
 .result__video {
   width: 100%;
 }
+
 .search-form {
+  display: flex;
+  justify-content: space-between;
 }
+
 .search-form__fieldset {
+  border: none;
 }
+
 .search-form__fieldset-title {
 }
 .search-form__label {
@@ -82,6 +92,7 @@ ol {
 .search-form__pseudo-checkbox {
 }
 .button {
+  width: 194px;
 }
 .search-form__submit-button {
 }
@@ -95,10 +106,12 @@ ol {
 }
 
 .title {
+  margin-bottom: 26px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
-  line-height: 70px;
+  line-height: 70.5px;
+  text-transform: uppercase;
 }
 .content__accent {
 }
@@ -109,6 +122,36 @@ ol {
   flex-direction: column;
   
 }
+
+/* Стилизация скроллбара для Chrome, Edge, Safari, Opera */
+.content__list::-webkit-scrollbar {
+  width: 6px; /* Делаем скролл тонким */
+}
+
+.content__list::-webkit-scrollbar-track {
+  background: #1b1919; /* Чёрный фон дорожки */
+}
+
+.content__list::-webkit-scrollbar-thumb {
+  background: #333; /* Тёмно-серый цвет ползунка */
+  border-radius: 4px; /* Округляем углы */
+}
+
+.content__list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Светлее при наведении */
+}
+
+/* Стилизация скроллбара для Firefox */
+.content__list {
+  scrollbar-width: thin; /* Делаем скролл тоньше */
+  scrollbar-color: #333 #1b1919; /* Ползунок | Фон дорожки */
+}
+
+/* Добавляем отступ для скролла, если браузер не поддерживает кастомизацию */
+.content__list {
+  scrollbar-gutter: stable; /* Оставляет место для скролла */
+}
+
 .cards-list-item-template {
 }
 .content__list-item {
@@ -131,9 +174,4 @@ ol {
 }
 .more-button {
 }
-.error-template {
-}
-.error {
-}
-.error__title {
-}
+
