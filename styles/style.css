@@ -120,7 +120,7 @@ ol {
   max-height: 100%;
   display: flex;
   flex-direction: column;
-  
+  row-gap: 34px;
 }
 
 /* Стилизация скроллбара для Chrome, Edge, Safari, Opera */
@@ -156,18 +156,38 @@ ol {
 }
 .content__list-item {
 }
+
 .content__card-link {
+  text-decoration: none;
+  color: #fff;
 }
+
 .content__video-card {
+  display: flex;
 }
+
 .content__video-card-description-container {
+  width: 50%;
 }
+
 .content__video-card-title {
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
 }
+
 .content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.2px;
 }
+
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 50%;
   height: 100%;
 }
 .more-button-template {
