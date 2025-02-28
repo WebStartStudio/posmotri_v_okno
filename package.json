@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "echo 'Hallo!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "npm run fixAll": "npm run format && npm run lintfix"
+  },
+  "dependencies": {
+    "prettier": "^3.5.2",
+    "stylelint": "^16.14.1"
+  }
+}
